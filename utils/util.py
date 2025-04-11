@@ -15,7 +15,7 @@ def order_points(corner):
     corner = corner.reshape(-1, 2)
     order = np.zeros(4).astype(np.uint8)
 
-    summ = np.sum(corner, axis = 1)
+    summ = np.sum(corner, axis=1)
     order[0] = np.argmin(summ)
     order[3] = np.argmax(summ)
 
