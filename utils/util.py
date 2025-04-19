@@ -5,9 +5,9 @@ import numpy as np
 def preprocessing(image):
     image = cv.medianBlur(image, 3)
     kernel = np.ones((5, 5), np.uint8)
-    image = cv.morphologyEx(image, cv.MORPH_OPEN, kernel, iterations=1)
+    image = cv.morphologyEx(image, cv.MORPH_OPEN, kernel, iterations=3)
     kernel = np.ones((3, 3), np.uint8)
-    image = cv.erode(image, kernel, iterations=3)
+    image = cv.erode(image, kernel, iterations=5)
     return image
 
 

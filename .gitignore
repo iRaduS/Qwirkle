@@ -3,4 +3,6 @@
 .vscode/
 .venv/
 datasets/
+*/**/__pycache__/
+**/*/__pycache__/
 Project1.pdf
